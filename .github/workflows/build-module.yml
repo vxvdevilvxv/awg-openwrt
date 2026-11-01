@@ -112,9 +112,9 @@ jobs:
 
       # 2. ОБНОВЛЯЕМ ЭКШЕН ДО V2 И ЯВНО ПЕРЕДАЕМ ТОКЕН С ТЕГОМ
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v1
         with:
           files: awgrelease/*.ipk
-          tag_name: ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #   tag_name: ${{ github.ref_name }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
